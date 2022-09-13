@@ -443,7 +443,7 @@
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                            One of the best assets of the English language and why it is so awesome is its flexibility. It is a huge entity of vocabulary and is constantly absorbing new words, whilst at the same time seeping into foreign languages. English contains over 750,000 words.
+                            One of the best assets of the English language and why it is so awesome is its flexibility. It is a huge entity of vocabulary and is constantly absorbing new words, whilst at the same time seeping into foreign languages. Lennon maya.
                             </div>
                         </div>
                     </div>
