@@ -23,7 +23,7 @@ Route::get('/students',[StudentController::class, 'index'])->name('students.ingr
 Route::get('/students/create',[StudentController::class, 'create'])->name('students.crear')->middleware('verified'); 
 Route::post('/students/add',[StudentController::class, 'store'])->name('students.guardar')->middleware('verified'); 
 Route::get('/students/edit/{id}',[StudentController::class, 'edit'])->name('students.edit')->middleware('verified');
-Route::get('/students/update/{id}',[StudentController::class, 'update'])->name('students.actualizar')->middleware('verified');
+Route::put('/students/update/{id}',[StudentController::class, 'update'])->name('students.actualizar')->middleware('verified');
 Route::delete('/students/delete/{id}',[StudentController::class, 'destroy'])->name('students.borrar')->middleware('verified');
 
 Route::get('/dashboard', function () {

@@ -25,7 +25,7 @@
       <form method="post" action="{{ route('students.actualizar', $student->id) }}">
           <div class="form-group">
               @csrf
-              @method('PATCH')
+              @method('PUT')
               <label for="name">Name</label>
               <input type="text" class="form-control" name="name" value="{{ $student->name }}"/>
           </div>
