@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student;
+use Hash;
 
 class StudentController extends Controller
 {
@@ -40,7 +41,22 @@ class StudentController extends Controller
             'phone' => 'required|numeric',
             'password' => 'required|max:255',
         ]);
+
         $student = Student::create($storeData);
+
+               //Codigo HAsheado 
+        // $this->validate($request, [
+        //     'name' => 'required|max:255',
+        //     'email' => 'required|max:255',
+        //     'phone' => 'required|numeric',
+        //     'password' => 'required|max:255',
+        // ]);
+
+        // $input = $request->all();
+        // $input['password'] = Hash::make($input['password']);
+
+        // $student = Student::create($input);
+
         return redirect('/students')->with('completed', 'Student has been saved!');
     }
     /**
